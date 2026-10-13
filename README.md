@@ -2,7 +2,12 @@
 
 Exclusive package: `com.qrpro.scanner.gx`.
 Manifest AdMob App ID: `ca-app-pub-3289974964220873~1766489685`.
-Current revision: 1. Mode: test. Production approval: false.
+Current revision: 2. Mode: test. Production approval: false.
+
+Revision 2 stages the five real units supplied in the owner's October 13, 2026
+AdMob screenshot. They are not used for requests while mode remains test.
+The screenshot also lists banner `ca-app-pub-3289974964220873/2530287305`;
+the app has no banner placement, so this unit is not configured.
 
 The Android artifact is a signed non-debuggable Release build. Ad mode is independent
 of build type: test mode forces Google's five official demo units, even if an ID
@@ -15,7 +20,7 @@ The first-install trial suppresses all ads, including test ads.
 Only after the exact Galaxy app is live and the owner explicitly requests production:
 
 1. Confirm app registration and Privacy & messaging in AdMob.
-2. Supply the five actual unit IDs belonging to publisher `3289974964220873`.
+2. Reconfirm the five staged unit IDs belonging to publisher `3289974964220873`.
 3. Set `ad_mode` to `production` and `production_ads_approved` to true.
 4. Keep desired global/per-format switches enabled and increment `config_revision`.
 5. Reopen the app to fetch the new config, then verify SDK requests and impressions.
